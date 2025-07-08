@@ -164,8 +164,8 @@ def api_delete(current_user, id):
     db.session.commit()
     return jsonify({"message": "note deleted successfully"}), 200
 
-
-
+with app.app_context():
+    db.create_all()
 
 # ---------------------------------- MAIN ---------------------------------- #
 
