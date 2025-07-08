@@ -13,7 +13,7 @@ This is a full-stack Flask web app that supports user registration, login, logou
 
 ## 🚀 Live Demo
 
-[🔗 Click to Visit]([https://your-render-app-url.onrender.com])
+[🔗 Click to Visit](https://your-render-app-url.onrender.com)
 
 ## 🛠️ Tech Stack
 
