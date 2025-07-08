@@ -1,0 +1,21 @@
+# Ignore virtual environment
+env/
+
+# Bytecode and cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# SQLite DB
+*.db
+*.sqlite3
+
+# Flask instance folder
+instance/
+
+# Secrets
+.env
+
+# OS files
+.DS_Store

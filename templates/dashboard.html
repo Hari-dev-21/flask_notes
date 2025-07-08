@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard</title>
+  <script defer src="/static/script.js"></script>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="container fade-in">
+    <h1>Dashboard</h1>
+
+    <h2>Create Note</h2>
+    <input type="text" id="note_input" placeholder="Enter note">
+    <button onclick="createNote()">Add Note</button>
+
+    <h2>Your Notes</h2>
+    <ul id="note_list">
+      <!-- Notes will be dynamically injected by script.js -->
+    </ul>
+
+    <p id="message"></p>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </div>
+
+  <div class="footer">Made with ❤️ Killer.co</div>
+</body>
+</html>

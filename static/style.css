@@ -1,0 +1,221 @@
+/* static/style.css */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #ece9e6, #ffffff);
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+input[type="text"],
+input[type="password"] {
+  display: block;
+  padding: 12px;
+  margin: 15px auto;
+  width: 90%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+  outline: none;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 20px auto;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+#message {
+  margin-top: 20px;
+  text-align: center;
+  color: green;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+ul#note_list {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul#note_list li {
+  margin: 12px 0;
+  padding: 14px;
+  background: #fdfdfd;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: background 0.3s ease;
+}
+
+ul#note_list li:hover {
+  background: #f2f9ff;
+}
+
+ul#note_list button {
+  background-color: #e74c3c;
+  padding: 6px 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+ul#note_list button:hover {
+  background-color: #c0392b;
+}
+
+.logout-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #e67e22;
+  padding: 10px 16px;
+  font-size: 14px;
+  border-radius: 8px;
+}
+
+.logout-btn:hover {
+  background: #d35400;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #777;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+.actions button {
+  padding: 5px 10px;
+  font-size: 13px;
+}
+
+#message {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+#message.success {
+  color: green;
+}
+
+#message.error {
+  color: red;
+}
+#note_list li {
+  margin-bottom: 12px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.note-content {
+  margin-right: 12px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+ul#note_list li {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note-content {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.actions button {
+  margin-left: 6px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.actions button:hover {
+  background-color: #0056b3;
+}
+
+.logout-btn {
+  margin-top: 20px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #999;
+}
