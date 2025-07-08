@@ -4,10 +4,11 @@ from flask_bcrypt import Bcrypt
 from datetime import datetime, timedelta, timezone
 from functools import wraps
 import jwt
+import os
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///database.db"
-app.config['SECRET_KEY'] = "your_super_secret_key"
+app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY", "dev_secret")
 
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
